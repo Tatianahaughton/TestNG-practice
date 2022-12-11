@@ -1,0 +1,19 @@
+Soft Assertion-will execute all the code in the test case
+soft.AssertAll- Will show how may assertions failed
+Without soft.AssertAll=wont show you why they failed.
+
+DataProvider Class follows 2D array.
+Example-you have to log in with 4 different userNames and passwords.To achieve data-driven testing use @DataProvider
+
+@DataProvider
+public Object[][](return data type of provider) logInData() {
+Object[][] login=new Object[4][2]-4 rows and 2 columns-4 userNames, 4 passwords and 2 columns (UserName,Password)
+login[0][0]="Admin";-input into the 1st cell
+login[0][1]="Password"
+login[1][0]
+login[1][1] etc to fill all [4][2]
+
+return login
+}
+
+Link test with dataProvider by adding the (dataProvide name"loginData")

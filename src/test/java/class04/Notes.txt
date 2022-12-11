@@ -1,0 +1,5 @@
+@BeforeTest-execute before each test tag is encountered in XML
+AfterTest-executes after each closong test tag in xml
+
+@BeforeSuite-executes before the<suite> tag
+AAfterSuite
